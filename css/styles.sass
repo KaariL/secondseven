@@ -15,7 +15,12 @@ $roboto: 'Roboto'
 body
   font-family: $sans
   text-align: center
-
+section
+  text-align: center
+  margin: 0 auto
+  width: 90%
+  max-width: 1200px
+  border: 1px solid pink
 h2
   width: 100%
   font-size: 1.3rem
@@ -31,15 +36,22 @@ h3
   flex-flow: row
   flex-wrap: wrap
   justify-content: center
-  width: 90%
-  max-width: 1200px
-  margin: 0 auto
 .services-container
   width: 30%
   margin: 1%
   min-width: 150px
   background-color: pink
+.insight
+  background-image: url('../assets/images/insight.png')
+  background-position: center
+  background-size: contain
+  background-repeat: no-repeat
+  height: 400px
+  width: 70%
+  border: 1px solid pink
 @media (max-width: 768px)
+  section
+    width: 100%
   .services
     flex-flow: column
   .services-container
