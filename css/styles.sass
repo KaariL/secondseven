@@ -40,23 +40,44 @@ h3
   width: 30%
   margin: 1%
   min-width: 150px
-  background-color: pink
-.insight
-  background-image: url('../assets/images/insight.png')
+.project-container
+  display: flex
+  flex-flow: row
+  align-items: center
+  margin: 40px auto
+  p
+    flex-basis: auto
+    padding: 15px
+    line-height: 1.53rem
+  &:nth-child(even)
+    flex-flow: row-reverse
+.project-image
   background-position: center
   background-size: contain
   background-repeat: no-repeat
   height: 400px
-  width: 70%
-  border: 1px solid pink
+  flex-shrink: 0
+  max-width: 600px
+  min-width: 225px
+  flex-basis: 60%
+.insight
+  background-image: url('../assets/images/insight.png')
+.simon
+  background-image: url('../assets/images/simon.png')
+.menuboard
+  background-image: url('../assets/images/menuboard.png')
 @media (max-width: 768px)
   section
     width: 100%
-  .services
-    flex-flow: column
+  .projects
+    flex-flow: column-reverse
   .services-container
     width: 80%
     margin: auto
+  .project-container
+    flex-flow: column-reverse !important
+  .project-image
+    width: 100%
 @media (min-width: 769px) and (max-width: 1000px)
   .services-container
     width: 47%
