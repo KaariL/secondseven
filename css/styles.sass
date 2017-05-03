@@ -15,12 +15,9 @@ $roboto: 'Roboto'
 body
   font-family: $sans
   text-align: center
-section
-  text-align: center
-  margin: 0 auto
-  width: 90%
-  max-width: 1200px
 
+
+//INDEX INDEX                     INDEX INDEX
 h2
   //section titles
   width: 100%
@@ -28,6 +25,13 @@ h2
   font-weight: 700
   font-family: $titillium
   margin-top: 50px
+nav
+  //footer
+  margin: 20px 0
+  width: 100%
+  a
+    margin: 3%
+//SERVICES SERVICES                       SERVICES SERVICES
 h3
   //services titles
   font-family: $roboto
@@ -45,13 +49,18 @@ h3
   left: -100%
   color: $black
   background-color: $red
-
 .services
   display: flex
   flex-flow: row
   flex-wrap: wrap
   justify-content: center
+  text-align: center
+  margin: 0 auto
+  width: 90%
+  max-width: 1200px
+  //parent of:
 .services-container
+  //6 of these, no siblings
   width: 30%
   margin: 1%
   min-width: 150px
@@ -70,7 +79,7 @@ h3
       transition: left .7s cubic-bezier(0.905, 0.125, 1.000, 1.000), right .7s cubic-bezier(0.905, 0.125, 1.000, 1.000)
     .shadow-title
       left: 0
-
+//PROJECTS PROJECTS                    PROJECTS PROJECTS
 .project-container
   display: flex
   flex-flow: row
@@ -97,11 +106,22 @@ h3
   background-image: url('../assets/images/simon.png')
 .menuboard
   background-image: url('../assets/images/menuboard.png')
+
+//DETAILS DETAILS                         DETAILS DETAILS
+#services
+  width: 100%
+  margin: 0
+.service-details
+  width: 100%
+  margin: 0
+//MEDIA QUERIES MEDIA QUERIES                   MEDIA QUERIES MEDIA QUERIES
 @media (max-width: 768px)
   section
     width: 100%
   .projects
     flex-flow: column-reverse
+    justify-content: space-between
+    align-content: space-between
   .services-container
     width: 80%
     margin: auto
