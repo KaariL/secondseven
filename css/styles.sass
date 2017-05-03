@@ -6,7 +6,7 @@ $red: #FF587F
 $linkblue: #2234a5
 $grey: #CECECE
 $darkgrey: #444
-$darkergrey: #212121
+$black: #212121
 
 $sans: 'Raleway', sans-serif
 $titillium: 'Titillium Web', sans-serif
@@ -20,17 +20,32 @@ section
   margin: 0 auto
   width: 90%
   max-width: 1200px
-  border: 1px solid pink
+
 h2
+  //section titles
   width: 100%
-  font-size: 1.3rem
+  font-size: 1.4rem
   font-weight: 700
   font-family: $titillium
+  margin-top: 50px
 h3
+  //services titles
   font-family: $roboto
   font-weight: 300
-  background-color: black
-  color: pink
+  color: lighten($red, 12%)
+  background-color: $black
+  margin: 0 0 20px
+  line-height: 185%
+  position: absolute
+  top: 0
+  width: 100%
+  right: 0
+  transition: left .5s cubic-bezier(0.905, 0.125, 1.000, 1.000), right .5s cubic-bezier(0.905, 0.125, 1.000, 1.000)
+.shadow-title
+  left: -100%
+  color: $black
+  background-color: $red
+
 .services
   display: flex
   flex-flow: row
@@ -40,6 +55,22 @@ h3
   width: 30%
   margin: 1%
   min-width: 150px
+  border: 3px solid $red
+  border-top: 0
+  position: relative
+  background-color: white
+  cursor: pointer
+  overflow: hidden
+  p
+    margin: 46px 5px 23px
+    text-indent: 2rem
+  &:hover
+    h3
+      right: -100%
+      transition: left .7s cubic-bezier(0.905, 0.125, 1.000, 1.000), right .7s cubic-bezier(0.905, 0.125, 1.000, 1.000)
+    .shadow-title
+      left: 0
+
 .project-container
   display: flex
   flex-flow: row

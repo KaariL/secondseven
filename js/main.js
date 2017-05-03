@@ -6,15 +6,3 @@ $.ajaxPrefilter( function (options) {
     //options.url = "http://cors.corsproxy.io/url=" + options.url;
   }
 });
-$.get(
-  'http://assets.secondseven.ca/html-includes/header.html',
-function ( response ){
-  var header = document.getElementsByTagName('header');
-  $(header).prepend(response);
-});
-$.get(
-  'http://assets.secondseven.ca/html-includes/footer.html',
-function ( response ){
-  var footer = document.getElementsByTagName('footer');
-  $(footer).prepend(response);
-});
