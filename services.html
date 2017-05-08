@@ -17,21 +17,95 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway|Titillium+Web|Roboto" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/services.css">
   <!--[if lt IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 <body>
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <symbol id="bolt" viewBox="0 0 32 32">
+        <title>bolt</title>
+        <path d="M32 0l-24 16 6 4-14 12 24-12-6-4z"></path>
+      </symbol>
+
+      <symbol id="book" viewBox="0 0 32 32">
+        <title>book-alt</title>
+        <path d="M32 4h-4v-4h-24c-2.2 0-4 1.8-4 4v24c0 2.2 1.8 4 4 4h24v-20h4l-4-4 4-4zM24 28h-16v-24h16v24zM12 8h8v4h-8z"></path>
+      </symbol>
+
+      <symbol id="layers" viewBox="0 0 32 32">
+        <title>layers</title>
+        <path d="M0 22l16.001 4 15.999-4v4l-15.999 4-16.001-4zM0 14l16.001 4 15.999-4v4l-15.999 4-16.001-4zM0 6l16.001-4 15.999 4v4l-15.999 4-16.001-4z"></path>
+      </symbol>
+
+      <symbol id="user" viewBox="0 0 24 32">
+        <title>user</title>
+        <path d="M12 16c-6.625 0-12 5.375-12 12 0 2.211 1.789 4 4 4h16c2.211 0 4-1.789 4-4 0-6.625-5.375-12-12-12zM6 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6s-6-2.686-6-6z"></path>
+      </symbol>
+
+      <symbol id="sun" viewBox="0 0 32 32">
+        <title>sun-fill</title>
+        <path d="M16.001 8c-4.418 0-8 3.582-8 8s3.582 8 8 8c4.418 0 7.999-3.582 7.999-8s-3.581-8-7.999-8v0zM14 2c0-1.105 0.895-2 2-2s2 0.895 2 2c0 1.105-0.895 2-2 2s-2-0.895-2-2zM4 6c0-1.105 0.895-2 2-2s2 0.895 2 2c0 1.105-0.895 2-2 2s-2-0.895-2-2zM2 14c1.105 0 2 0.895 2 2 0 1.107-0.895 2-2 2s-2-0.893-2-2c0-1.105 0.895-2 2-2zM4 26c0-1.105 0.895-2 2-2s2 0.895 2 2c0 1.105-0.895 2-2 2s-2-0.895-2-2zM14 30c0-1.109 0.895-2 2-2 1.108 0 2 0.891 2 2 0 1.102-0.892 2-2 2-1.105 0-2-0.898-2-2zM24 26c0-1.105 0.895-2 2-2s2 0.895 2 2c0 1.105-0.895 2-2 2s-2-0.895-2-2zM30 18c-1.104 0-2-0.896-2-2 0-1.107 0.896-2 2-2s2 0.893 2 2c0 1.104-0.896 2-2 2zM24 6c0-1.105 0.895-2 2-2s2 0.895 2 2c0 1.105-0.895 2-2 2s-2-0.895-2-2z"></path>
+      </symbol>
+
+      <symbol id="umbrella" viewBox="0 0 32 32">
+        <title>umbrella</title>
+        <path d="M16 0c-8.82 0-16 7.178-16 16h4c0-0.826 0.676-1.5 1.5-1.5 0.828 0 1.5 0.674 1.5 1.5h4c0-0.826 0.676-1.5 1.5-1.5 0.828 0 1.5 0.674 1.5 1.5v10c0 1.102-0.895 2-2 2-1.102 0-2-0.898-2-2h-4c0 3.309 2.695 6 6 6 3.312 0 6-2.691 6-6v-10c0-0.826 0.676-1.5 1.5-1.5 0.828 0 1.498 0.674 1.498 1.5h4c0-0.826 0.68-1.5 1.5-1.5 0.828 0 1.5 0.674 1.5 1.5h4c0-8.822-7.172-16-15.998-16z"></path>
+      </symbol>
+    </defs>
+  </svg>
   <header>
 
   </header><!-- end header -->
   <main id="services">
-    <section class="service-details">this one should have a contact form that jsut gives email then once that ssubmitted, redirets you to "how to get started" blog post</section>
-    <section class="service-details"></section>
-    <section class="service-details"></section>
-    <section class="service-details"></section>
-    <section class="service-details"></section>
-    <section class="service-details"></section>
+
+    <ul>
+      <li>
+        Brand
+        <svg><use xlink:href="#user"></use></svg>
+      </li>
+      <li class="active">
+        Design
+        <svg class=""><use xlink:href="#sun"></use></svg>
+      </li>
+      <li>
+        Support
+        <svg class=""><use xlink:href="#umbrella"></use></svg>
+      </li>
+      <li>
+        Host
+        <svg class=""><use xlink:href="#layers"></use></svg>
+      </li>
+      <li>
+        Apps
+        <svg class=""><use xlink:href="#bolt"></use></svg>
+      </li>
+      <li>
+        Domain
+        <svg class=""><use xlink:href="#book"></use></svg>
+      </li>
+    </ul>
+
+    <section class="service-details">
+      <p>this one should have a contact form that jsut gives email then once that ssubmitted, redirets you to "how to get started" blog post</p>
+    </section> <!-- END Branding/Identity -->
+    <section class="service-details">
+
+    </section> <!-- END Web Design/Development -->
+    <section class="service-details">
+
+    </section> <!-- END Maintenance/Support-->
+    <section class="service-details">
+
+    </section> <!-- END Hosting -->
+    <section class="service-details">
+
+    </section> <!-- END 100s of Powerful Applications-->
+    <section class="service-details">
+
+    </section> <!-- END Domain Registration -->
   </main>
 
   <footer>

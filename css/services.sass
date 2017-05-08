@@ -1,0 +1,65 @@
+$grey: #CECECE
+$moregrey: #AEAEAE
+$yellow: #DEE06F
+$darkgrey: #444
+$black: #212121
+//SERVICES PAGE SERVICES PAGE SERVICES PAGE
+header
+  //obs will be different
+#services
+  //main element
+  ul
+    //the tabs
+    width: 100%
+    max-width: 1000px
+    margin: 0
+    padding: 0
+    display: flex
+    flex-flow: row
+    flex-wrap: nowrap
+    justify-content: space-between
+    background-color: $grey
+    color: $darkgrey
+    svg
+      width: 1em
+      height: 1em
+      fill: $darkgrey
+      transform: translateY(2px)
+    li
+      margin: 0 0px
+      padding: 20px 0
+      list-style: none
+      background-color: $grey
+      border-bottom: 3px solid $moregrey
+      cursor: pointer
+      flex-grow: 1
+      &:hover
+        fill: black
+        color: black
+        text-shadow: 0 0 1px white
+    .active
+      background-color: white
+      border-bottom: 4px solid $yellow
+      color: black
+      svg
+        fill: darken($yellow, 13%)
+
+
+
+  section
+    //6 siblings to UL class of:service-details
+    width: 100%
+    max-width: 1000px
+    background-color: pink
+    height: 500px
+    overflow: scroll
+    margin: 0 auto
+    position: absolute
+    border-bottom: 3px solid $moregrey
+    &.selected
+      z-index: 10
+    p
+      margin: 30px
+
+footer
+  margin-top: 600px

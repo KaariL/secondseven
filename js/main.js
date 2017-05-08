@@ -22,4 +22,15 @@ $.ajaxPrefilter( function (options) {
         $('.services').css('height', newHeight );
       };
       setNewHeight();
-} 
+}
+
+
+//ACCORDIAN ACCORDIAN ACCORDIAN ACCORDIAN ACCORDIAN
+
+$('#services li').click( function() {
+  $('#services li').removeClass('active');
+  $( this ).addClass('active');
+  $('#services section').removeClass('selected');
+  var index = $( this ).index();
+  $('#services section').eq(index).addClass('selected');
+});

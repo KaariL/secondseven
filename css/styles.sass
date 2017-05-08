@@ -24,7 +24,9 @@ $title2: 'hand'
 body
   font-family: $sans
   text-align: center
-
+main
+  max-width: 1000px
+  margin: 0 auto
 
 //INDEX INDEX                     INDEX INDEX
 #title
@@ -159,9 +161,6 @@ h3
   background-image: url('../assets/images/menuboard.png')
 
 //DETAILS DETAILS                         DETAILS DETAILS
-#services
-  width: 100%
-  margin: 0
 .service-details
   width: 100%
   margin: 0
@@ -179,6 +178,8 @@ h3
   background-size: cover
   background-position: center center
 .bgv-container
+  max-width: 1200px
+  margin: 0 auto
   border-width: 50px 0 50px 0
   border-style: solid
   border-color: $black
@@ -199,6 +200,8 @@ h3
     flex-flow: column-reverse !important
   .project-image
     width: 100%
+  #services ul
+    flex-flow: column !important
 @media (min-width: 769px) and (max-width: 1000px)
   .services-container
     width: 47%

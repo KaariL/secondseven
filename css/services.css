@@ -1,0 +1,52 @@
+#services ul {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: #CECECE;
+  color: #444; }
+  #services ul svg {
+    width: 1em;
+    height: 1em;
+    fill: #444;
+    transform: translateY(2px); }
+  #services ul li {
+    margin: 0 0px;
+    padding: 20px 0;
+    list-style: none;
+    background-color: #CECECE;
+    border-bottom: 3px solid #AEAEAE;
+    cursor: pointer;
+    flex-grow: 1; }
+    #services ul li:hover {
+      fill: black;
+      color: black;
+      text-shadow: 0 0 1px white; }
+  #services ul .active {
+    background-color: white;
+    border-bottom: 4px solid #DEE06F;
+    color: black; }
+    #services ul .active svg {
+      fill: #d1d438; }
+#services section {
+  width: 100%;
+  max-width: 1000px;
+  background-color: pink;
+  height: 500px;
+  overflow: scroll;
+  margin: 0 auto;
+  position: absolute;
+  border-bottom: 3px solid #AEAEAE; }
+  #services section.selected {
+    z-index: 10; }
+  #services section p {
+    margin: 30px; }
+
+footer {
+  margin-top: 600px; }
+
+/*# sourceMappingURL=services.css.map */
