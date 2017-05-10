@@ -1,3 +1,6 @@
+header {
+  margin: 100px; }
+
 #services ul {
   width: 100%;
   max-width: 1000px;
@@ -35,7 +38,7 @@
 #services section {
   width: 100%;
   max-width: 1000px;
-  background-color: pink;
+  background-color: white;
   height: 500px;
   overflow: scroll;
   margin: 0 auto;
@@ -43,8 +46,6 @@
   border-bottom: 3px solid #AEAEAE; }
   #services section.selected {
     z-index: 10; }
-  #services section p {
-    margin: 30px; }
 
 footer {
   margin-top: 600px; }

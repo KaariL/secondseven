@@ -17,11 +17,11 @@ $.ajaxPrefilter( function (options) {
       var currentHeight = $('.services').height();
       var newHeight = currentHeight + 120 + 'px';
 
-
       function setNewHeight() {
         $('.services').css('height', newHeight );
       };
       setNewHeight();
+      //currently doesn't adjust on window resize
 }
 
 
