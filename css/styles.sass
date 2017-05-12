@@ -152,11 +152,11 @@ h3
   flex-basis: 60%
   margin: 0 25px
 .insight
-  background-image: url('../assets/images/insight.png')
+  background-image: url('../assets/images/projects/insight.png')
 .simon
-  background-image: url('../assets/images/simon.png')
+  background-image: url('../assets/images/projects/simon.png')
 .menuboard
-  background-image: url('../assets/images/menuboard.png')
+  background-image: url('../assets/images/projects/menuboard.png')
 
 //DETAILS DETAILS                         DETAILS DETAILS
 .service-details
@@ -198,8 +198,13 @@ h3
     flex-flow: column-reverse !important
   .project-image
     width: 100%
-  #services ul
-    flex-flow: column !important
+  #services
+    //main tag on services page
+    ul
+      flex-flow: column !important
+    img
+      opacity: .36
+
 @media (min-width: 769px) and (max-width: 1000px)
   .services-container
     width: 47%
