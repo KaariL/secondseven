@@ -16,7 +16,8 @@
 
   <link href="https://fonts.googleapis.com/css?family=Raleway|Titillium+Web|Roboto" rel="stylesheet">
   <link rel="stylesheet" href="http://secondseven.ca/css/normalize.css">
-  <link rel="stylesheet" href="http://secondseven.ca/css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!--<link rel="stylesheet" href="http://secondseven.ca/css/styles.css"> -->
   <!--[if lt IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -115,18 +116,31 @@
         <div class="insight project-image"></div>
       </div> <!-- end insight container -->
       <div class="project-container">
-        <p><a href="http://simonkutchaw.ca" rel="noopener noreferrer" target="_blank">Simon's prfessional portfolio</a>, including letter head and business card, is paired down and usable. A strongly defined identity along with a clear structure provided a web strategy that is timeless and easy to update . We hope the site met the job as confidently as he does.</p>
+        <p><a href="http://simonkutchaw.ca" rel="noopener noreferrer" target="_blank">Simon's prfessional portfolio</a>, including letter head and business card, is paired down and usable. A strongly defined identity along with a clear structure provided a web strategy that is timeless and easy to update. We hope the site met the job as confidently as Simon does.</p>
         <div class="simon project-image"></div>
       </div> <!-- end simon container -->
       <div class="project-container">
-        <p>The pleasure of making <a href="http://www.menuboard.xyz" rel="noopener noreferrer" target="_blank">Menu Board</a> came from the exceptional content provided by Sam. It was a designer's playground where we could push its functionality to a higher level.</p>
-        <div class="menuboard project-image"></div>
+        <p>The pleasure of making <a href="http://jacqsstudio.ca/" rel="noopener noreferrer" target="_blank">Jacq's Studio</a> came from the exceptional content provided by Jacqueline. It was a designer's playground where we could push its functionality to a higher level.</p>
+        <div class="jacqs project-image"></div>
       </div> <!-- end menuboard container -->
     </section><!-- end projects section-->
 
     <h2>Contact</h2>
-    <section class="contact" id="contact">
-      <script type="text/javascript" src="https://form.jotform.ca/jsform/71225395920254"></script>
+    <section id="contact">
+      <form action="//formspree.io/kaari@secondseven.ca" method="POST" role="form">
+      <input type="text" name="name" placeholder="Your Name" />
+      <input type="email" name="_replyto" placeholder="Your Email" />
+      <textarea name="message" placeholder="Your Project"></textarea>
+      <p>*If you prefer a call, please leave your phone number</p>
+      <input type="submit" value="Send">
+      <!-- <input type="hidden" name="_next" value="//insigh"> -->
+      <input type="hidden" name="_subject" value="Website contact" />
+      <input type="text" name="_gotcha" style="display:none" />
+      </form>
+      <script>
+          var contactform =  document.getElementById('contact');
+          contactform.setAttribute('action', '//formspree.io/' + 'kaari' + '@' + 'secondseven' + '.' + 'ca');
+      </script>
     </section><!-- end contact section-->
   </main>
 

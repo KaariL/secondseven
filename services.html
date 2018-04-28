@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway|Titillium+Web|Roboto" rel="stylesheet">
   <link rel="stylesheet" href="http://secondseven.ca/css/normalize.css">
   <link rel="stylesheet" href="http://secondseven.ca/css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="http://secondseven.ca/css/services.css">
   <!--[if lt IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -104,7 +105,9 @@
       <div>
         <a href="http://insightaudiomastering.com" target="_blank" rel="noopener noreferrer">http://insightaudiomastering.com</a>
         <a href="http://secondseven.ca" target="_blank" rel="noopener noreferrer">http://secondseven.ca</a>
-        <a href="http://www.menuboard.xyz" target="_blank" rel="noopener noreferrer">http://www.menuboard.xyz</a>
+        <a href="http://simonkutchaw.ca" target="_blank" rel="noopener noreferrer">http://simonkutchaw.ca</a>
+        <a href="http://jacqsstudio.ca" target="_blank" rel="noopener noreferrer">http://jacqsstudio.ca</a>
+        <a href="http://artistepeintrerogerlandry.com/" target="_blank" rel="noopener noreferrer">http://artistepeintrerogerlandry.com/</a>
         <a href="" target="_blank" rel="noopener noreferrer"></a>
         <p>Second Seven Designed Sites</p>
       </div>
@@ -128,9 +131,9 @@
       <div>
           <a href="http://simonkutchaw.ca" target="_blank" rel="noopener noreferrer">http://simonkutchaw.ca</a>
           <a href="http://kaarilandry.com" target="_blank" rel="noopener noreferrer">http://kaarilandry.com</a>
-          <a href="http://poeticdaily.com" target="_blank" rel="noopener noreferrer">http://poeticdaily.com</a>
-          <a href="http://www.menuboard.xyz" target="_blank" rel="noopener noreferrer">http://www.menuboard.xyz</a>
           <a href="http://jacqsstudio.ca" target="_blank" rel="noopener noreferrer">http://jacqsstudio.ca</a>
+          <a href="http://artistepeintrerogerlandry.com/" target="_blank" rel="noopener noreferrer">http://artistepeintrerogerlandry.com/</a>
+          <a href="http://applepi.site" target="_blank" rel="noopener noreferrer">http://applepi.site</a>
           <p>Second Seven Hosted Sites</p>
       </div>
       <img src="assets/images/services/islands.png" height="300" width="300" />
@@ -158,15 +161,28 @@
 
 
   </main> <!-- id="services" -->
-  <div class="contact">
-    <h2>What are you waiting for...</h2>
-    <script type="text/javascript" src="https://form.jotform.ca/jsform/71405696020249"></script>
-  </div>
+  <h2>Contact</h2>
+  <section id="contact">
+    <form action="//formspree.io/kaari@secondseven.ca" method="POST" role="form">
+    <input type="text" name="name" placeholder="Your Name" />
+    <input type="email" name="_replyto" placeholder="Your Email" />
+    <textarea name="message" placeholder="Your Project"></textarea>
+    <p>*If you prefer a call, please leave your phone number</p>
+    <input type="submit" value="Send">
+    <!-- <input type="hidden" name="_next" value="//insigh"> -->
+    <input type="hidden" name="_subject" value="Website contact" />
+    <input type="text" name="_gotcha" style="display:none" />
+    </form>
+    <script>
+        var contactform =  document.getElementById('contact');
+        contactform.setAttribute('action', '//formspree.io/' + 'kaari' + '@' + 'secondseven' + '.' + 'ca');
+    </script>
+  </section><!-- end contact section-->
   <footer>
     <nav>
         <a href="http://secondseven.ca/#contact" >client support</a>
         <a href="http://blog.secondseven.ca" target="_self" rel="noopener noreferrer">blog</a>
-        <a href="http://secondseven.ca/services" target="_self" rel="noopener noreferrer">services</a>
+        <a href="http://secondseven.ca/services.html" target="_self" rel="noopener noreferrer">services</a>
         <a href="https://r116.websiteservername.com:2096/" target="_self" rel="noopener noreferrer">webmail login</a>
     </nav>
   </footer>  <!-- end footer -->
